@@ -14,8 +14,6 @@ Solution 1:
 if __name__ == '__main__':
     n = int(input())
     scores = map(int, input().split())
-    
-
     unique_scores=sorted(set(scores), reverse=True)
     runnerup_score=unique_scores[1]
     print(runnerup_score)
@@ -26,7 +24,6 @@ Solution 2:
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    
     scores=list(arr)
     max_score=max(scores)
     
