@@ -7,7 +7,7 @@
 2 3 6 6 5
 Sample Output 0
 
-5'''
+5''' 
 
  
 Solution 1:
