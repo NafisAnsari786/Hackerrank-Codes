@@ -7,7 +7,7 @@ SELECT
     COUNT(DISTINCT e.employee_code) AS total_employees 
 FROM 
     Company c
-LEFT JOIN 
+LEFT JOIN  
     Lead_Manager lm ON c.company_code = lm.company_code
 LEFT JOIN 
     Senior_Manager sm ON c.company_code = sm.company_code
