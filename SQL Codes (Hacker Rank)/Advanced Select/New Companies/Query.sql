@@ -1,6 +1,6 @@
 SELECT 
     c.company_code, 
-    c.founder,
+    c.founder, 
     COUNT(DISTINCT lm.lead_manager_code) AS total_lead_managers,
     COUNT(DISTINCT sm.senior_manager_code) AS total_senior_managers,
     COUNT(DISTINCT m.manager_code) AS total_managers,
