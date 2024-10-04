@@ -14,7 +14,7 @@ Lead_Manager: This table contains information about lead managers.
 lead_manager_code: The code of the lead manager (string).
 company_code: The code of the company the lead manager works for (string).
 Senior_Manager: This table contains information about senior managers.
-
+ 
 senior_manager_code: The code of the senior manager (string).
 lead_manager_code: The code of the lead manager supervising the senior manager (string).
 company_code: The code of the company the senior manager works for (string).
