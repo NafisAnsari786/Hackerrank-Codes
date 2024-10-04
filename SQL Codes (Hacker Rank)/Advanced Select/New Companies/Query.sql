@@ -5,7 +5,7 @@ SELECT
     COUNT(DISTINCT sm.senior_manager_code) AS total_senior_managers,
     COUNT(DISTINCT m.manager_code) AS total_managers,
     COUNT(DISTINCT e.employee_code) AS total_employees
-FROM 
+FROM  
     Company c
 LEFT JOIN 
     Lead_Manager lm ON c.company_code = lm.company_code
