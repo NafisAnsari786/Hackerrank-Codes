@@ -3,7 +3,7 @@ SELECT
     c.founder,  
     COUNT(DISTINCT lm.lead_manager_code) AS total_lead_managers,
     COUNT(DISTINCT sm.senior_manager_code) AS total_senior_managers,
-    COUNT(DISTINCT m.manager_code) AS total_managers, 
+    COUNT(DISTINCT m.manager_code) AS total_managers,
     COUNT(DISTINCT e.employee_code) AS total_employees
 FROM 
     Company c
