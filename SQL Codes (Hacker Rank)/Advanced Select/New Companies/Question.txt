@@ -1,4 +1,4 @@
-SQL Query Question with Table Schemas 
+SQL Query Question with Table Schemas  
 Question:
 Given the following table schemas, write a SQL query to display the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees for each company. The output should be ordered by the company_code in ascending order. Please note that:
 
