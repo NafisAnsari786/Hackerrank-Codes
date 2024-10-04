@@ -6,7 +6,7 @@ The tables may contain duplicate records.
 The company_code is a string, so the sorting should not be numeric. For example, if the company_codes are C_1, C_2, and C_10, then the ascending order should be C_1, C_10, and C_2.
 Table Schemas:
 Company: This table contains information about each company.
-
+ 
 company_code: The code of the company (string).
 founder: The founder of the company (string).
 Lead_Manager: This table contains information about lead managers.
