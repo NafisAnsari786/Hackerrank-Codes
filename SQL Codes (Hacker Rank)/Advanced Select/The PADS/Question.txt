@@ -12,7 +12,7 @@ Note: There will be at least two entries in the table for each type of occupatio
 Sample Output
 
 Ashely(P)
-Christeen(P)
+Christeen(P) 
 Jane(A)
 Jenny(D)
 Julia(A)
