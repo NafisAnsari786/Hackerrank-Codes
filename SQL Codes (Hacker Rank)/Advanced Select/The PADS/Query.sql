@@ -7,3 +7,4 @@ from occupations
 group by occupation
 order by count(occupation), occupation asc;
  
+ 
