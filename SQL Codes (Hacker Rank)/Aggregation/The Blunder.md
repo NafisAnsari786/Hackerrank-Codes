@@ -2,7 +2,7 @@
 
 ✅ **EASY**
 
-<span style="color:green; font-weight:bold">EASY</span>
+![EASY](https://your-repository-link/easy-image.png)
 
 
 
