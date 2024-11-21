@@ -13,6 +13,7 @@ The Employee table containing employee data for a company is described as follow
 where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is the their monthly salary.
 
 Sample Input
+
 ![image](https://github.com/user-attachments/assets/e611db47-6e70-4df6-97cf-124b5e9dc617)
 
 Sample Output
