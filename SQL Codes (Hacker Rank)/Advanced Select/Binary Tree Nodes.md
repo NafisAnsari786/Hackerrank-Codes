@@ -1,5 +1,6 @@
 ### **You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.**
 ![image](https://github.com/user-attachments/assets/40afd3d5-fa72-471a-880b-c38b2e3e4849)
+
 **Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:**
 
 - Root: If node is root node.
