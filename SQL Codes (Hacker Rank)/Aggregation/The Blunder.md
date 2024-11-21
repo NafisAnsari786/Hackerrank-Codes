@@ -1,5 +1,3 @@
-# ![EASY](https://img.shields.io/badge/EASY-green)
-
 <img src="https://img.shields.io/badge/EASY-green" alt="EASY" width="150">
 
 
