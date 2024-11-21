@@ -6,6 +6,7 @@ Write a query calculating the amount of error (i.e.: actual - miscalculated aver
 Input Format
 
 The EMPLOYEES table is described as follows:
+
 ![image](https://github.com/user-attachments/assets/f38b9371-0f44-4735-87c0-dda7fa7230c8)
 
 Note: Salary is per month.
