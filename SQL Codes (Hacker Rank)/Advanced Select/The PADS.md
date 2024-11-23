@@ -1,13 +1,20 @@
+<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+
 Generate the following two result sets:
 
-Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).
+Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). 
+For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).
 Query the number of ocurrences of each occupation in OCCUPATIONS. Sort the occurrences in ascending order, and output them in the following format:
-
+```text
 "There are a total of [occupation_count] [occupation]s."
-
+```
 where [occupation_count] is the number of occurrences of an occupation in OCCUPATIONS and [occupation] is the lowercase occupation name. If more than one Occupation has the same [occupation_count], they should be ordered alphabetically.
 
 Note: There will be at least two entries in the table for each type of occupation.
+
+Sample Input
+
+![image](https://github.com/user-attachments/assets/2470312b-942a-45d5-a0d3-7fb1ca78908f)
 
 Sample Output  
 
