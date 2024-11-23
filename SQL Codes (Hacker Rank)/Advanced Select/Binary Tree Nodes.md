@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+
 ### **You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.**
 ![image](https://github.com/user-attachments/assets/40afd3d5-fa72-471a-880b-c38b2e3e4849)
 
