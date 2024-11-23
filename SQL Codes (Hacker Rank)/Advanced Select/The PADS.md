@@ -32,3 +32,16 @@ There are a total of 2 doctors.
 There are a total of 2 singers.
 There are a total of 3 actors.
 There are a total of 3 professors.
+
+**SOLUTION**
+
+```sql
+select concat(name,'(',left(occupation,1),')')
+from occupations
+order by name;
+
+select concat('There are a total of ',count(occupation),' ',lower(occupation),'s.')
+from occupations
+group by occupation
+order by count(occupation), occupation asc;
+```
