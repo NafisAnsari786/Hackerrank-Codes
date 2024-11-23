@@ -37,6 +37,7 @@ company_code: The code of the company the employee works for (string).
 Sample Output
 
 C1 Monika 1 2 1 2
+
 C2 Samantha 1 1 2 2
 
 **SOLUTION**
