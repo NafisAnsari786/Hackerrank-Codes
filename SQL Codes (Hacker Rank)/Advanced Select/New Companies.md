@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70"> 
   
 Given the following table schemas, write a SQL query to display the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees for each company. The output should be ordered by the company_code in ascending order. Please note that:
 
