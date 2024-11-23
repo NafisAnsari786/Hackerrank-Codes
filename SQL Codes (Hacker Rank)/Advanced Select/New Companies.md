@@ -1,5 +1,5 @@
-SQL Query Question with Table Schemas   
-Question:
+<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+  
 Given the following table schemas, write a SQL query to display the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees for each company. The output should be ordered by the company_code in ascending order. Please note that:
 
 The tables may contain duplicate records.
@@ -31,6 +31,13 @@ manager_code: The code of the manager supervising the employee (string).
 senior_manager_code: The code of the senior manager supervising the employee (string).
 lead_manager_code: The code of the lead manager supervising the employee (string).
 company_code: The code of the company the employee works for (string).
+
+![image](https://github.com/user-attachments/assets/fabd942d-3e80-4b9b-add1-1dde4f53e704)
+
+Sample Output
+
+C1 Monika 1 2 1 2
+C2 Samantha 1 1 2 2
 
 **SOLUTION**
 ```sql
