@@ -13,6 +13,8 @@ The STATION table is described as follows:
 **SOLUTION** 
 
 ```SQL
+---Using Regular Expression here
+
 SELECT DISTINCT(CITY) FROM STATION
 WHERE CITY NOT REGEXP '^[AEIOUaeiou]' AND CITY NOT REGEXP '[AEIOUaeiou]$';
 ```
