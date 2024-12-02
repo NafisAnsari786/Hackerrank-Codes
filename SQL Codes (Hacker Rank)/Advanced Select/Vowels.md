@@ -7,7 +7,8 @@ Input Format
 
 The STATION table is described as follows:
 
-https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg
+![image](https://github.com/user-attachments/assets/28c60e0c-332b-4e45-909b-44bd8b045a05)
+
 
 **SOLUTION** 
 
