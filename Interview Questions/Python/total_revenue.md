@@ -12,18 +12,19 @@ df=pd.read_csv('sales.csv')
 total_revenue=df.groupby('Category')['Revenue'].sum()
 
 # Find the top-performing category
-top_cattegory=total_revenue.idmax()
+top_cattegory=total_revenue.idxmax()
 top_revenue=total_revenue.max()
 
 print("Top performing Category: {top_cattegory} with Revenue: {top_revenue}")
 
 # Plot the total revenue for each category
-plt.figure(fig_size=(10,8))
-total_revenue.plot(kind='bar', color='skyblue')
+plt.figure(figsize=(10,8))
+total_revenue.plot(kind='bar', color='salmon')
 plt.xlabel('Category')
-plt.ylabale('Total Revenue')
+plt.ylabel('Total Revenue')
 plt.title('Total Revenue by Category')
-plt.xticks(rotation=90)
+plt.xticks(rotation=45)
 plt.tight_layout()
+plt.legend()
 plt.show()
 ```
