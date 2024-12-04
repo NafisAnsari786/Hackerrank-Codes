@@ -4,7 +4,7 @@
 
 ```python
 import pandas as pd
-
+ 
 # Load the sales data
 df = pd.read_csv('monthly_sales.csv')
 
