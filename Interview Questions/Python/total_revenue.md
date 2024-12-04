@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+
 ![image](https://github.com/user-attachments/assets/69e2a1e4-998f-4fdb-9aed-5a2b91739994)
 
 **SOLUTION**
