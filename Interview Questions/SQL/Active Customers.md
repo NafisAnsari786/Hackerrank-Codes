@@ -19,4 +19,4 @@ FROM ActiveCustomers
 WHERE ActiveDays > 0;
 ```
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c5715b4e-7c67-4942-a8f2-aa1046569dcc)
