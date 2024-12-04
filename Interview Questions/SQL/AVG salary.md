@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/EASY-green" alt="EASY" width="70">
+
 ![image](https://github.com/user-attachments/assets/f9ed2d30-cf67-4e06-91c9-f99a00c21052)
 
 **SOLUTION**
