@@ -23,9 +23,9 @@ GROUP BY REGION, CUSTOMERID;
 
 ![image](https://github.com/user-attachments/assets/caaa9817-a04b-4066-8fd9-ae8e0531aa95)
 
-```html
-<h2><u> NOTE: </u></h2>
+```txt
+NOTE
 
-<b>Even if CUSTOMERID is unique within a specific context, if there are multiple purchase records for the same customer (for example, a customer can make multiple purchases over time), then those rows are not automatically aggregated by default.
-By grouping by CUSTOMERID, you tell SQL to aggregate (in this case, sum) all the purchase amounts for each customer, rather than treating each purchase record as a separate entity.</b>
+Even if CUSTOMERID is unique within a specific context, if there are multiple purchase records for the same customer (for example, a customer can make multiple purchases over time), then those rows are not automatically aggregated by default.
+By grouping by CUSTOMERID, you tell SQL to aggregate (in this case, sum) all the purchase amounts for each customer, rather than treating each purchase record as a separate entity.
 ```
