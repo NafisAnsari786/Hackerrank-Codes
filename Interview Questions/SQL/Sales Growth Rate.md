@@ -9,7 +9,7 @@ WITH MonthlyGrowth AS (
         Month, 
         Year,
         SUM(TotalSales) AS SalesPerMonth, 
-        SUM(SUM(TotalSales)) OVER (PARTITION BY Year) AS AnnualSales
+        SUM(SUM(TotalSales)) OVER (PARTITION BY Year) AS AnnualSales    -- Total annual sales for each year
     FROM MonthlySales
     GROUP BY Month, Year
 )
