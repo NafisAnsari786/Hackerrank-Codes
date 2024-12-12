@@ -4,5 +4,25 @@
 
 **SOLUTION**
 ```sql
+WITH MonthlyGrowth AS ( 
+    SELECT 
+        Month, 
+        Year,
+        SUM(TotalSales) AS SalesPerMonth, 
+        SUM(SUM(TotalSales)) OVER (PARTITION BY Year) AS AnnualSales
+    FROM MonthlySales
+    GROUP BY Month, Year
+)
+SELECT 
+    Year, 
+    Month, 
+    SalesPerMonth, 
+    AnnualSales,
+    ROUND((SalesPerMonth / AnnualSales) * 100, 2) AS SalesGrowthPercent
+FROM MonthlyGrowth
+ORDER BY Year, Month; 
 
 ```
+
+**OUTPUT**
+![image](https://github.com/user-attachments/assets/f28c1d2f-9991-4ec1-b878-51f616d5e9ae)
