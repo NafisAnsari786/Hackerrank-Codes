@@ -8,7 +8,7 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
-# Reading the dataset
+# Reading the dataset, If data is available then pd.read_csv('user_data.csv')
 df = pd.DataFrame({
     'UserID': [101, 102, 103],
     'Age': [25, 30, 45],
