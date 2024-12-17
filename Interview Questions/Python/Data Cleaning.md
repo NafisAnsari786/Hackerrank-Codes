@@ -16,4 +16,5 @@ print(f"Number of duplicates removed: {len(df) - len(unique_df)}")
 unique_df
 ```
 **OUTPUT**
+
 ![image](https://github.com/user-attachments/assets/0e3d9db1-5663-4529-abd5-eb4240eb72fa)
