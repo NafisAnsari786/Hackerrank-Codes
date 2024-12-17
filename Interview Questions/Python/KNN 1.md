@@ -46,4 +46,5 @@ print("Prediction for new data:", prediction)
 
 **OUTPUT**
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/user-attachments/assets/96cef52e-d489-4d64-9f2d-37d35eddfbef)
+
