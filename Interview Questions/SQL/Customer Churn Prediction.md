@@ -5,5 +5,21 @@
 **SOLUTION**
 
 ```sql
-
+WITH CustStats AS (
+    SELECT CustomerID, Month, PurchaseCount,
+    LAG(PurchaseCount, 1) OVER (PARTITION BY CustomerID ORDER BY Month) AS PreviousPurchase,
+    LAG(PurchaseCount, 2) OVER (PARTITION BY CustomerID ORDER BY Month) AS PurchaseTwoMonthsAgo
+    FROM CustomerPurchases
+),
+CustomerChurn AS (
+    SELECT CustomerID
+    FROM CustStats
+    WHERE PurchaseCount = 0
+    AND PreviousPurchase = 0
+    AND PurchaseTwoMonthsAgo > 0
+)
+SELECT DISTINCT CustomerID
+FROM CustomerChurn;
 ```
+**OUTPUT**
+![image](https://github.com/user-attachments/assets/75a03816-7d6a-4489-929c-d13a144ec890)
