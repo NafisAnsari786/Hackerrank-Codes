@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/MEDIUM-orange" alt="MEDIUM" width="70">
+<img src="https://img.shields.io/badge/HARD-darkred" alt="HARD" width="70">
 
 ![image](https://github.com/user-attachments/assets/224a8050-79f4-4a62-a202-61d3528a864b)
 
