@@ -33,6 +33,7 @@ WHERE BelowReorderCount = 3
 ORDER BY ProductID;
 ```
 **OUTPUT**
+
 ![image](https://github.com/user-attachments/assets/8e6689e1-420b-409c-a836-5342084dc77b)
 
 ![image](https://github.com/user-attachments/assets/b41777d6-0024-453b-b70c-13bf543d5843)
