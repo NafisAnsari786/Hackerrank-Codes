@@ -4,25 +4,27 @@
 
 **SOLUTION**
 ```sql
-WITH MonthlyGrowth AS ( 
-    SELECT 
-        Month, 
+WITH LaggedSales AS (
+    SELECT
+        Month,
         Year,
-        SUM(TotalSales) AS SalesPerMonth, 
-        SUM(SUM(TotalSales)) OVER (PARTITION BY Year) AS AnnualSales    -- Total annual sales for each year
-    FROM MonthlySales
-    GROUP BY Month, Year
+        TotalSales,
+        LAG(TotalSales) OVER (ORDER BY Year, Month) AS PreviousTotalSales
+    FROM
+        MonthlySales
 )
-SELECT 
-    Year, 
-    Month, 
-    SalesPerMonth, 
-    AnnualSales,
-    ROUND((SalesPerMonth / AnnualSales) * 100, 2) AS SalesGrowthPercent
-FROM MonthlyGrowth
-ORDER BY Year, Month; 
-
+SELECT
+    Month,
+    Year,
+    TotalSales,
+    PreviousTotalSales,
+    ROUND(((TotalSales - PreviousTotalSales) / NULLIF(PreviousTotalSales, 0)) * 100, 2) AS GrowthRate
+FROM
+    LaggedSales
+WHERE
+    PreviousTotalSales IS NOT NULL; 
 ```
 
 **OUTPUT**
-![image](https://github.com/user-attachments/assets/f28c1d2f-9991-4ec1-b878-51f616d5e9ae)
+![image](https://github.com/user-attachments/assets/86cd769a-7fd3-4c05-a74a-03952333a1ca)
+
