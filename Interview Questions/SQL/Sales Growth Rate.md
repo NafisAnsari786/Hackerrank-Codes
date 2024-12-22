@@ -26,5 +26,6 @@ WHERE
 ```
 
 **OUTPUT**
+
 ![image](https://github.com/user-attachments/assets/86cd769a-7fd3-4c05-a74a-03952333a1ca)
 
