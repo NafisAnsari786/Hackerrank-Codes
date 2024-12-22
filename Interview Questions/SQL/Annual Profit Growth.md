@@ -4,30 +4,33 @@
 
 **SOLUTION**
 ```sql
-WITH AnnualProfit AS (
-    SELECT Year,
-    (SUM(Revenue) - SUM(Expenses)) AS Profit
+WITH ProfitData AS (
+    SELECT 
+        Year,
+        (Revenue - Expenses) AS Profit
     FROM AnnualProfits
-    GROUP BY Year
 ),
-ProfitGrowth AS(
-    SELECT a1.Year AS Current_Year,
-    a2.Year As Next_Year,
-    a1.Profit AS Current_Profit,
-    a2.Profit AS Next_Profit,
-    ROUND(((a2.Profit - a1.Profit)/a1.Profit)*100, 2) AS Growth_Percentage
-    FROM AnnualProfit a1
-    INNER JOIN AnnualProfit a2
-    ON a2.Year = a1.Year + 1
+GrowthData AS (
+    SELECT 
+        Year,
+        Profit,
+        LAG(Profit) OVER (ORDER BY Year) AS PreviousYearProfit
+    FROM ProfitData
 )
-SELECT Current_Year,
-Next_Year,
-Current_Profit,
-Next_Profit,
-Growth_Percentage
-FROM ProfitGrowth
-ORDER BY Current_Year;
+SELECT 
+    Year,
+    Profit,
+    PreviousYearProfit,
+    CASE 
+        WHEN PreviousYearProfit IS NOT NULL THEN 
+            ROUND((Profit - PreviousYearProfit) * 100.0 / PreviousYearProfit, 2)
+        ELSE 
+            NULL
+    END AS YoYProfitGrowthPercentage
+FROM GrowthData;
 ```
 
 **OUTPUT**
-![image](https://github.com/user-attachments/assets/ed6f6e8d-7114-4fef-9832-fb95a10a0971)
+
+![image](https://github.com/user-attachments/assets/1c7d671c-1919-41de-9556-7ca1a07c3a74)
+
