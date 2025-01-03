@@ -6,7 +6,7 @@ Query the Euclidean Distance between points P1 and P2 and format your answer to 
 
 Input Format
 
-The STATION table is described as follows:
+The STATION table is described as follows: 
 
 ![image](https://github.com/user-attachments/assets/755292eb-388a-4907-a199-2e3e4c5b818e)
 
