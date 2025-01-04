@@ -12,7 +12,7 @@ WITH CustomerOrderMonths AS (
         EXTRACT(Month FROM OrderDate) AS Month
     FROM CustomerOrders
 ),
-ConsecutiveOrders AS (
+ConsecutiveOrders AS ( 
     SELECT c1.CustomerID
     FROM CustomerOrderMonths c1
     INNER JOIN CustomerOrderMonths c2
