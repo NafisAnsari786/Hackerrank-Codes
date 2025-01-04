@@ -7,7 +7,7 @@
 ```sql
 WITH CustomerOrderMonths AS (
     SELECT DISTINCT 
-        CustomerID,
+        CustomerID, 
         EXTRACT(Year FROM OrderDate) AS Year,
         EXTRACT(Month FROM OrderDate) AS Month
     FROM CustomerOrders
