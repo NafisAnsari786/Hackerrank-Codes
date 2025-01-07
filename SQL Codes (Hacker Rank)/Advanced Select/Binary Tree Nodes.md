@@ -11,7 +11,7 @@
 
 Sample Input  
 ![image](https://github.com/user-attachments/assets/e221eaa6-7816-4bcb-9c11-d1b1383781f1)
-
+ 
 Sample Output
 
 1 Leaf
