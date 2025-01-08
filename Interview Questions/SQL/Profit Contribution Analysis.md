@@ -4,22 +4,24 @@
 
 **SOLUTION**
 ```sql
-WITH ProfitCal AS (
-    SELECT Category,
-           SUM(Revenue) - SUM(Cost) AS Profit
-    FROM CategoryProfit
-    GROUP BY Category
-),
-TotalProfit AS (
-    SELECT SUM(Revenue) - SUM(Cost) AS TotalProfit
-    FROM CategoryProfit
+WITH CategoryProfitSummary AS (
+    SELECT
+        Category,
+        Revenue,
+        Cost,
+        Revenue - Cost AS Profit,
+        SUM(Revenue - Cost) OVER () AS TotalProfit
+    FROM
+        CategoryProfit
 )
-SELECT p.Category,
-       p.Profit,
-       ROUND((p.Profit / t.TotalProfit) * 100, 2) AS ContributionPercentage
-FROM ProfitCal p
-CROSS JOIN TotalProfit t
-ORDER BY ContributionPercentage DESC;
+SELECT
+    Category,
+    Profit,
+    ROUND((Profit / TotalProfit) * 100, 2) AS ProfitContributionPercentage
+FROM
+    CategoryProfitSummary
+ORDER BY
+    ProfitContributionPercentage DESC;
 ```
 
 **OUTPUT**
