@@ -11,20 +11,25 @@ FP = 5
 TN = 35
 FN = 10
 
-#Precision 
+# Precision
 precision = TP / (TP + FP)
 
-#Recall
-recall = TP / (TP + FP)
+# Recall
+recall = TP / (TP + FN)
 
-# F1 Score 
+# F1 Score
 f1_score = 2 * (precision * recall) / (precision + recall)
+
+# Accuracy
+accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 print(f"Precision: {precision:.4f}")
 print(f"Recall: {recall:.4f}")
 print(f"F1 Score: {f1_score:.4f}")
+print(f"Accuracy: {accuracy:.4f}")
 ```
 
 **OUTPUT**
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/545f76e4-da6e-4813-92b0-2a90740b22a9)
+
