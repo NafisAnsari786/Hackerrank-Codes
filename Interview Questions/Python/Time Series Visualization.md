@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/a24282fd-8c38-4b23-8d22-941c78c66105)
 
 **SOLUTION**
-
+ 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt 
