@@ -25,3 +25,4 @@ plt.title('Sales Trends Over Time')  # Add a title for better visualization
 plt.grid(True)  # Optional: Adds a grid for easier trend analysis
 plt.show()
 ```
+
