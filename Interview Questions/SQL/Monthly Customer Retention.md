@@ -1,5 +1,5 @@
 <img src="https://img.shields.io/badge/HARD-darkred" alt="HARD" width="70">
-
+ 
 ![image](https://github.com/user-attachments/assets/5d768851-c7fd-4115-8d05-cc8c2c2a18cd)
 
 **SOLUTION**
